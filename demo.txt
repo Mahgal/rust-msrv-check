@@ -1,0 +1,7 @@
+$ python3 msrv_check.py examples/demo-workspace --rustc 1.85.0
+rustc 1.85.0 — 4 crate(s) checked
+  [FAIL] api: needs rustc >= 1.100 but installed is 1.85.0
+
+$ python3 msrv_check.py examples/demo-workspace --rustc 1.100.0
+rustc 1.100.0 — 4 crate(s) checked
+OK — every crate's MSRV is satisfied.
